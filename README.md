@@ -69,9 +69,9 @@ Setup the mapping of actuators and the grid size in the `config.json` file.
 }
 ```
 
-`mapping`: Maps grid coordinates to a vibration pin.
-`columns`: The number of columns your grid has.
-`lines`: The number of lines your grid has.
+`mapping`: Maps grid coordinates to a vibration pin.  
+`columns`: The number of columns your grid has.  
+`lines`: The number of lines your grid has.  
 `spacing`: The spacing in centimetres between each vibration motor.
 
 ### Run application
