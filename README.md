@@ -41,7 +41,7 @@ Setup the mapping of actuators and the grid size in the `config.json` file.
 
 ```json
 {
-    "mapping": // Maps grid coordinates to a vibration pin
+    "mapping": 
     {
         "0,0": 4,
         "1,0" : 5,
@@ -62,12 +62,17 @@ Setup the mapping of actuators and the grid size in the `config.json` file.
     }, 
     "grid":
     {
-        "columns" : 4, // the number of columns your grid has
-        "lines" : 4, // the number of lines your grid has
-        "spacing" : 2.5 // the spacing in centimetres between each vibration motor
+        "columns" : 4, 
+        "lines" : 4, 
+        "spacing" : 2.5 
     }
 }
 ```
+
+`mapping`: Maps grid coordinates to a vibration pin.
+`columns`: The number of columns your grid has.
+`lines`: The number of lines your grid has.
+`spacing`: The spacing in centimetres between each vibration motor.
 
 ### Run application
 Simply run the `PatternConverter.py` in a terminal of your choice and follow the instructions. The script prints a JSON string in the terminal after completion. 
