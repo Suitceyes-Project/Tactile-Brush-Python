@@ -32,3 +32,42 @@ Time 338.34557698194055 ms:
 Time 614.1729740007977 ms:
          Physical actuator at column 3 and line 0 triggered for 385.8270259992023 msec with intensity 1
 ```
+
+## JSON Converter
+The `PatternConverter.py` script allows you to create a vibration pattern from a stroke that can then be used with [Vibration Pattern Player](https://github.com/Suitceyes-Project-Code/Vibration-Pattern-Player).
+
+### Setup
+Setup the mapping of actuators and the grid size in the `config.json` file. 
+
+```json
+{
+    "mapping": // Maps grid coordinates to a vibration pin
+    {
+        "0,0": 4,
+        "1,0" : 5,
+        "2,0" : 6,
+        "3,0" : 7,
+        "0,1" : 0,
+        "1,1" : 1,
+        "2,1" : 2,
+        "3,1" : 3,
+        "0,2" : 8,
+        "1,2" : 9,
+        "2,2" : 10,
+        "3,2" : 11,
+        "0,3" : 12,
+        "1,3" : 13,
+        "2,3" : 14,
+        "3,3" : 15
+    }, 
+    "grid":
+    {
+        "columns" : 4, // the number of columns your grid has
+        "lines" : 4, // the number of lines your grid has
+        "spacing" : 2.5 // the spacing in centimetres between each vibration motor
+    }
+}
+```
+
+### Run application
+Simply run the `PatternConverter.py` in a terminal of your choice and follow the instructions. The script prints a JSON string in the terminal after completion. 
